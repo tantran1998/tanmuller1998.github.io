@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trần Ngọc Tân</title>
+	<link rel="shortcut icon" type="image/png" href="images/tnt.jpg">
+	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/login.js"></script>
+	<script type="text/javascript">
+			function tanchot1998() {
+				var number1 = document.getElementById("number1").value;
+				var number2 = document.getElementById("number2").value;
+				document.getElementById("tanmuller").innerHTML = (parseInt(number1) + parseInt(number2));
+			}
+			// function write() {
+			// 	var ten = document.getElementById("ten").value
+			// 	var tuoi = document.getElementById("tuoi").value
+			// 	document.getElementById("tentuoi")
+			// }
+	</script>
+</head>
+<body class="bg-light">
+	<div class="container">
+		<nav style="background-image: url(images/okkk.jpg);" class="row navbar navbar-expand-md fixed-top">
+			<ul class="nav nav-pills nav-justified">
+				<span class="spinner-grow spinner-border-md" style="margin-left: 16px;"></span>
+				<li class="nav-item pl-3 pr-3 ml-3 menu">
+				    <a class="nav-link text-white menu2" href="file:///D:/duan/project/thuchanhboostrap/index.html"><h5 class="menu4">Home</h5></a>
+				</li>
+				<span class="spinner-grow spinner-border-md" style="margin-left: 16px;"></span>
+				<li class="nav-item pl-3 pr-3 ml-3 menu">
+				    <a class="nav-link text-white menu2" href="file:///D:/duan/project/thuchanhboostrap/information.html"><h5 class="menu4">Informations</h5></a>
+				</li>
+				<span class="spinner-grow spinner-border-md" style="margin-left: 16px;"></span>
+				<li class="nav-item pl-3 pr-3 ml-3 menu">
+				    <a class="nav-link text-white menu2" href="file:///D:/duan/project/thuchanhboostrap/store.html"><h5 class="menu4">Store</h5></a>
+				</li>
+				<span class="spinner-grow spinner-border-md" style="margin-left: 16px;"></span>
+				<li class="nav-item pl-3 pr-3 ml-3 menu" style="background-color: yellow">
+				    <a class="nav-link text-dark menu2" href="#"><h5 class="menu4">Pratice</h5></a>
+				</li>
+				<span class="spinner-grow spinner-border-md" style="margin-left: 16px;"></span>
+				<li class="nav-item pl-3 pr-3 ml-3 menu">
+				    <a class="nav-link text-white" href="file:///D:/duan/project/thuchanhboostrap/login.html"><h5 class="menu3">Login</h5></a>
+				</li>
+				<span class="spinner-grow spinner-border-md" style="margin-left: 16px;"></span>
+			    <li class="nav-item pl-3 pr-3 ml-3 menu">
+			      <a class="nav-link text-white" href="#"><h5 class="menu4">Tân_Muller_1998</h5></a>
+			    </li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		Xem Thời Gian
+		<button class="my-3" type="button" onclick="document.getElementById('demo0').innerHTML = Date()">
+		Click me to display Date and Time.</button>
+		<p id="demo0"></p>
+
+		Đổi Content
+		<p id="demo">JavaScript can change HTML content.</p>
+		<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+		Đổi kiểu Css
+		<p id="demo1">JavaScript can change the style of an HTML element.</p>
+		<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+
+		Ẩn Các phần tử đi
+		<p id="demo2">JavaScript can hide HTML elements.</p>
+		<button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+
+		Hiện các phần tử
+		<p id="demo3" style="display:none">Hello JavaScript!</p>
+		<button type="button" onclick="document.getElementById('demo3').style.display='block'">Click Me!</button>
+
+		nếu function đặt trong head thì ok. đặt trong body phải ghi trên nhé
+		Function
+		<p id="demo4">A Paragraph.</p>
+		<button type="button" onclick="myFunction1()">Try it</button>
+
+		sử dụng innerHTML
+		<p id="demo5"></p>
+		<script>
+		document.getElementById("demo5").innerHTML = 5 + 6;
+		</script>
+
+		sử dụng document.write
+		<script>
+		document.write(6 + 6);
+		</script>
+
+		sử dụng alert
+		<script>
+		window.alert(7 + 6);
+		</script>
+
+		<script>
+		console.log(8 + 6);
+		</script>
+
+
+		khai báo biến
+		<p id="demo6"></p>
+		<script>
+		var x, y, z;  // Statement 1
+		x = 9;    // Statement 2
+		y = 6;    // Statement 3
+		z = x + y;  // Statement 4
+		document.getElementById("demo6").innerHTML =
+		"The value of z is " + z + ".";  
+		</script>
+
+
+		<p id="demo7"></p>
+		<script>
+		document.getElementById("demo7").innerHTML = "Hello Dolly.";
+		</script>
+
+		dấu chấm phẩy
+		<p id="demo8"></p>
+		<script>
+		var a, b, c;
+		a = 5;
+		b = 6;
+		c = a + b;
+		document.getElementById("demo8").innerHTML = c;
+		</script>
+
+		Biến js
+		<p id="demo9"></p>
+		<script>
+		var x;
+		x = 6;
+		document.getElementById("demo9").innerHTML = x;
+		</script>
+
+		Toán tử js
+		<p id="demo10"></p>
+		<script>
+		document.getElementById("demo10").innerHTML = (10 + 6) * 10;
+		</script>
+
+		toán tử gán "="
+		<p id="demo11"></p>
+		<script>
+		var x, y;
+		x = 20;
+		y = 6;
+		document.getElementById("demo11").innerHTML = x + y;
+		</script>
+
+		biểu thức js
+		<p id="demo12"></p>
+		<script>
+		document.getElementById("demo12").innerHTML = 5 * 10;
+		</script>
+
+		Biểu thức cũng có giá trị biến
+		<p id="demo13"></p>
+		<script>
+		var x;
+		x = 5;
+		document.getElementById("demo13").innerHTML = x * 10;
+		</script>
+
+		giá trị biến chuỗi
+		<p id="demo14"></p>
+		<script>
+		document.getElementById("demo14").innerHTML = "John" + " "  + "Doe";
+		</script>
+
+		key js
+		<p id="demo15"></p>
+		<script>
+		var x, y;
+		x = 5 + 6;
+		y = x * 10;
+		document.getElementById("demo15").innerHTML = y;
+		</script>
+
+		có phân biệt chữ hoa và thường
+		<p id="demo16"></p>
+		<script>
+		var lastname, lastName;
+		lastName = "Doe";
+		lastname = "Peterson";
+		document.getElementById("demo16").innerHTML = lastName;
+		</script>
+
+		biến
+		<p id="demo17"></p>
+		<script>
+		var x = 5;
+		var y = 12;
+		var z = x + y;
+		document.getElementById("demo17").innerHTML =
+		"The value of z is: " + z;
+		</script>
+
+		khai báo biến và xem kqua
+		<p id="demo18"></p>
+		<script>
+		var carName = "Volvo";
+		document.getElementById("demo18").innerHTML = carName;
+		</script>
+
+		giá trị k xđ
+		<p id="demo19"></p>
+		<script>
+		var carName;
+		document.getElementById("demo19").innerHTML = carName;
+		</script>
+
+		khai báo lại biến
+		<p id="demo20"></p>
+		<script>
+		var carName = "Volvo";
+		var carName;
+		document.getElementById("demo20").innerHTML = carName;
+		</script>
+
+		số học js
+		<p id="demo21"></p>
+		<script>
+		var x = 5 + 2 + 3;
+		document.getElementById("demo21").innerHTML = x;
+		</script>
+
+		thêm chuỗi nhưng sẽ được nối thêm
+		<p id="demo22"></p>
+		<script>
+		var x = "John" + " " + "Doe";
+		document.getElementById("demo22").innerHTML = x;
+		</script>
+
+		trường hợp khác
+		<p id="demo23"></p>
+		<script>
+		x = "5" + 2 + 3;
+		document.getElementById("demo23").innerHTML = x;
+		</script>
+
+		trường hợp khác nữa
+		<p id="demo24"></p>
+		<script>
+		var x = 2 + 3 + "5"
+		document.getElementById("demo24").innerHTML = x;
+		</script>
+
+		gán các giá trị cho các biến và cộng lại
+		<p id="demo25"></p>
+		<script>
+		var x = 5;
+		var y = 2;
+		var z = x + y;
+		document.getElementById("demo25").innerHTML = z;
+		</script>
+
+		chuỗi được biết bằng cả 2 dấu "" hoặc '' - có thể viết dấu ngoặc kép bên trong ngoặc đơn và ngược lại
+		<p id="demo26"></p>
+		<script>
+		var carName1 = "Volvo XC60";
+		var carName2 = 'Volvo XC60';
+		document.getElementById("demo26").innerHTML =
+		carName1 + "<br>" + //xuống dòng nè
+		carName2; 
+		</script>
+
+		số js - Các số có thể được viết bằng hoặc không có số thập phân
+		<p id="demo27"></p>
+		<script>
+		var x1 = 34.00;
+		var x2 = 34;
+		var x3 = 3.14;
+		document.getElementById("demo27").innerHTML =
+		x1 + "<br>" + x2 + "<br>" + x3;
+		</script>
+
+		Booleans chỉ có thể có hai giá trị: true hoặc false.
+		<p id="demo28"></p>
+		<script>
+		var x = 5;
+		var y = 5;
+		var z = 6;
+		document.getElementById("demo28").innerHTML =
+		(x == y) + "<br>" + (x == z);
+		</script>
+
+		Mảng JavaScript được viết bằng dấu ngoặc vuông.
+		<p id="demo29"></p>
+		<script>
+		var cars = ["Saab","Volvo","BMW"];
+		document.getElementById("demo29").innerHTML = cars[0]; //0 có thể thay đổi để chọn cái sẽ hiện ra
+		</script>
+
+		Các đối tượng JavaScript được viết bằng dấu ngoặc nhọn {}.
+		<p id="demo30"></p>
+		<script>
+		var person = {
+		  firstName : "John",
+		  lastName  : "Doe",
+		  age     : 50,
+		  eyeColor  : "blue"
+		};
+		document.getElementById("demo30").innerHTML =
+		person.lastName + " is " + person.age + " years old.";
+		</script>
+
+		phép nhân
+		<p id="demo31"></p>
+		<script>
+		var x = myFunction(4, 3);
+		document.getElementById("demo31").innerHTML = x;
+		function myFunction(a, b) {
+		  return a * b;
+		}
+		</script>
+
+		khá hay
+		<p id="demo32"></p>
+		<script>
+		function toCelsius(f) {
+		  return (5/9) * (f-32);
+		}
+		document.getElementById("demo32").innerHTML = toCelsius(77);
+		</script>
+
+		Nếu toCelsius k có giá trị trong ngoặc () -> viết lại đoạn hàm
+		<p id="demo33"></p>
+		<script>
+		function toCelsius(f) {
+		  return (5/9) * (f-32);
+		}
+		document.getElementById("demo33").innerHTML = toCelsius;
+		</script>
+
+		Hàm được sử dụng làm giá trị biến
+		<p id="demo34"></p>
+		<script>
+		document.getElementById("demo34").innerHTML =
+		"The temperature is " + toCelsius(77) + " Celsius";
+		function toCelsius(fahrenheit) {
+		  return (5/9) * (fahrenheit-32);
+		} 
+		</script>
+
+		Các biến cục bộ chỉ có thể được truy cập từ bên trong hàm.
+		<p id="demo35"></p>
+		<p id="demo36"></p>
+		<script>
+		myFunction();
+		function myFunction() {
+		  var carName = "Volvo";
+		  document.getElementById("demo35").innerHTML =
+		  typeof carName + " " + carName;
+		}
+		document.getElementById("demo36").innerHTML =
+		typeof carName;
+		</script>
+
+		các đối tượng có thể chứa nhiều giá trị.
+		<p id="demo37"></p>
+		<script>
+		// Create an object:
+		var car = {type:"Fiat", model:"500", color:"white"};
+		// Display some data from the object:
+		document.getElementById("demo37").innerHTML = "The car type is " + car.type;
+		</script>
+
+		Định nghĩa đối tượng
+		<p id="demo38"></p>
+		<script type="text/javascript">
+			//create an object:
+			var person = {firstName:"Tan", lastName:"Chớt", age:21, eyeColor:"black"};
+			//display some data from the object:
+			document.getElementById("demo38").innerHTML =
+			person.firstName + "is" + person.age + "years old.";
+		</script>
+
+		truy cập thuộc tính đối tượng bằng 2 cách
+		<p id="demo39"></p>
+		<p id="demo40"></p>
+		<script>
+		// Create an object:
+		var person = {
+		  firstName: "John",
+		  lastName : "Doe",
+		  id     :  5566
+		};
+		// Display some data from the object:
+		document.getElementById("demo39").innerHTML =
+		person.firstName + " " + person.lastName;
+		document.getElementById("demo40").innerHTML =
+		person["firstName"] + " " + person["lastName"];
+		</script>
+
+		sử dụng this nè
+		<p id="demo41"></p>
+		<script>
+		// Create an object:
+		var person = {
+		  firstName: "John",
+		  lastName : "Doe",
+		  id     : 5566,
+		  fullName : function() {
+		    return this.firstName + " " + this.lastName;
+		  }
+		};
+		// Display data from the object:
+		document.getElementById("demo41").innerHTML = person.fullName();
+		</script>
+
+		xem ngày giờ
+		<button onclick="document.getElementById('demo42').innerHTML=Date()">The time is?</button>
+		<p id="demo42"></p>
+
+		như trên nhưng dùng this
+		<button onclick="this.innerHTML=Date()">The time is?</button>
+
+		phổ biến nhất
+		<button onclick="displayDate()">The time is?</button>
+		<script>
+		function displayDate() {
+		  document.getElementById("demo43").innerHTML = Date();
+		}
+		</script>
+		<p id="demo43"></p>
+
+		xem độ dài chuỗi
+		<p id="demo44"></p>
+		<script>
+		var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		document.getElementById("demo44").innerHTML = txt.length;
+		</script>
+
+		kí tự thoát dấu gạch chéo
+		<p id="demo45"></p>
+		<script>
+		var x = "We are the so-called \"Vikings\" from the north.";
+		document.getElementById("demo45").innerHTML = x; 
+		</script>
+
+		kí tự thoát dấu gạch chéo
+		<p id="demo46"></p>
+		<script>
+		var x = 'It\'s alright.';
+		document.getElementById("demo46").innerHTML = x; 
+		</script>
+
+		kí tự thoát dấu gạch chéo
+		<p id="demo47"></p>
+		<script>
+		var x = "The character \\ is called backslash.";
+		document.getElementById("demo47").innerHTML = x; 
+		</script>
+
+		Chuỗi có thể là đối tượng
+		<p id="demo48"></p>
+		<script>
+		var x = "John";        // x is a string
+		var y = new String("John");  // y is an object
+		document.getElementById("demo48").innerHTML =
+		typeof x + "<br>" + typeof y;
+		</script>
+
+		Khi sử dụng ==toán tử, các chuỗi bằng nhau bằng nhau:
+		<p id="demo49"></p>
+		<script>
+		var x = "John";        // x is a string
+		var y = new String("John");  // y is an object
+		document.getElementById("demo49").innerHTML = (x==y);
+		</script>
+
+		Khi sử dụng ===toán tử, các chuỗi bằng nhau không bằng nhau
+		<p id="demo50"></p>
+		<script>
+		var x = "John";        // x is a string
+		var y = new String("John");  // y is an object
+		document.getElementById("demo50").innerHTML = (x===y);
+		</script>
+
+		Hoặc thậm chí tệ hơn. Các đối tượng không thể được so sánh:
+		<p id="demo51"></p>
+		<script>
+		var x = new String("John");  // x is an object
+		var y = new String("John");  // y is an object
+		document.getElementById("demo51").innerHTML = (x==y);
+		</script>
+
+		Tìm chuỗi trong chuỗi
+		<p id="demo52"></p>
+		<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.indexOf("locate");
+		document.getElementById("demo52").innerHTML = pos;
+		</script>
+
+		Các lastIndexOf()phương thức trả về chỉ số của cuối cùng
+		<p id="demo53"></p>
+		<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.lastIndexOf("locate");
+		document.getElementById("demo53").innerHTML = pos;
+		</script>
+
+		Cả hai indexOf()và lastIndexOf()trả về -1 nếu không tìm thấy văn bản.
+		<p id="demo54"></p>
+		<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.indexOf("John");
+		document.getElementById("demo54").innerHTML = pos;
+		</script>
+
+		Cả hai phương thức đều chấp nhận tham số thứ hai làm vị trí bắt đầu cho tìm kiếm:
+		<p id="demo55"></p>
+		<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.indexOf("locate",15);
+		document.getElementById("demo55").innerHTML = pos;
+		</script>
+
+		Các lastIndexOf()phương thức tìm kiếm ngược (từ đầu đến đầu), nghĩa là: nếu tham số thứ hai là 15, tìm kiếm bắt đầu ở vị trí 15 và tìm kiếm đến đầu chuỗi.
+		<p id="demo56"></p>
+		<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.lastIndexOf("locate", 15);
+		document.getElementById("demo56").innerHTML = pos;
+		</script>
+
+		Tìm kiếm một chuỗi trong một chuỗi
+		<p id="demo57"></p>
+		<script>
+		var str = "Please locate where 'locate' occurs!";
+		var pos = str.search("locate");
+		document.getElementById("demo57").innerHTML = pos;
+		</script>
+
+		Phương thức lát ()
+		<p id="demo58"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(7,13);
+		document.getElementById("demo58").innerHTML = res; 
+		</script>
+
+		Nếu một tham số là âm, vị trí được tính từ cuối chuỗi.
+		<p id="demo59"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(-12,-6);
+		document.getElementById("demo59").innerHTML = res;
+		</script>
+
+		Nếu bạn bỏ qua tham số thứ hai, phương thức sẽ cắt phần còn lại của chuỗi:
+		<p id="demo60"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(7);
+		document.getElementById("demo60").innerHTML = res;
+		</script>
+
+		hoặc tính từ chuỗi
+		<p id="demo61"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.slice(-12) 
+		document.getElementById("demo61").innerHTML = res;
+		</script>
+
+		substring()
+		<p id="demo62"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.substring(7,13);
+		document.getElementById("demo62").innerHTML = res;
+		</script>
+
+		substr()
+		<p id="demo63"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.substr(7,6);
+		document.getElementById("demo63").innerHTML = res;
+		</script>
+
+		Nếu bạn bỏ qua tham số thứ hai, substr()sẽ cắt phần còn lại của chuỗi
+		<p id="demo64"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.substr(7);
+		document.getElementById("demo64").innerHTML = res;
+		</script>
+
+		Nếu tham số đầu tiên là âm, vị trí sẽ tính từ cuối chuỗi.
+		<p id="demo65"></p>
+		<script>
+		var str = "Apple, Banana, Kiwi";
+		var res = str.substr(-4);
+		document.getElementById("demo65").innerHTML = res;
+		</script>
+
+		
+
+
+
+
+		<img id="a1" src="images/001.jpg">
+		<img id="a2" src="images/003.jpg">
+		<div id="divYellow" style="height: 200px; width: 50px; background-color: yellow; display: none;"></div>
+		<div id="divRed" style="height: 200px; width: 50px; background-color: red; display: none;"></div>
+		<div id="div"></div>
+		<div id="div1"></div>
+		<div id="div2"></div>
+	</div>
+	<div class="my-3">
+		<button onclick="document.getElementById('a1').src='images/003.jpg'">exchange images1</button>
+		<button onclick="document.getElementById('a1').src='images/001.jpg'">exchange images2</button>
+		<button onclick="document.getElementById('a1').style.width='500px'">width</button>
+		<button onclick="document.getElementById('a1').style.height='500px'">height</button>
+		<button onclick="document.getElementById('a1').style.display='none'">DisplayNone</button>
+		<button onclick="document.getElementById('a1').style.display='inline-block'">DisplayInline-block</button>
+		<button type="button" onclick="HideImage()">display</button>
+		<button type="button" onclick="ShowImage()">inline-block</button>
+		<button onclick="document.getElementById('divYellow').style.display='inline-block'">CustomImage1</button>
+		<button type="button" onclick="CustomImage2()">CustomImage2</button>
+		<button type="button" onclick="CustomImage3()">CustomImage3</button>
+		<button type="button" onclick="CustomImage4()">CustomImage4</button>
+		<button type="button" onclick="CustomImage5()">CustomImage5</button>
+		<button type="button" onclick="Test()">AlertWindow</button>
+		<button type="button" onclick="show5()">cộng</button>
+		<button type="button" onclick="show()">nhân</button>
+	</div>
+	<div>
+		Thay thế nội dung chuỗi
+		<button onclick="myFunctiona1()">Try it</button>
+		<p id="demo66">Please visit Microsoft!</p>
+		<script>
+		function myFunctiona1() {
+		  var str1 = document.getElementById("demo66").innerHTML; 
+		  var txt1 = str1.replace("Microsoft","W3Schools");
+		  document.getElementById("demo66").innerHTML = txt1;
+		}
+		</script>
+
+		Theo mặc định, replace()phương thức chỉ thay thế khớp đầu tiên :
+		<button onclick="myFunctiona2()">Try it</button>
+		<p id="demo67">Please visit Microsoft and Microsoft!</p>
+		<script>
+		function myFunctiona2() {
+		  var str = document.getElementById("demo67").innerHTML; 
+		  var txt = str.replace("Microsoft","W3Schools");
+		  document.getElementById("demo67").innerHTML = txt;
+		}
+		</script>
+
+		Theo mặc định, replace()phương pháp là trường hợp nhạy cảm -> k hoạt động
+		<button onclick="myFunctiona3()">Try it</button>
+		<p id="demo68">Please visit Microsoft!</p>
+		<script>
+		function myFunctiona3() {
+		  var str = document.getElementById("demo68").innerHTML; 
+		  var txt = str.replace("MICROSOFT","W3Schools");
+		  document.getElementById("demo68").innerHTML = txt;
+		}
+		</script>
+
+		Để thay thế trường hợp không nhạy cảm -> sử dụng biểu thức chính quy bằng /icờ (không nhạy cảm):
+		<button onclick="myFunctiona4()">Try it</button>
+		<p id="demo69">Please visit Microsoft!</p>
+		<script>
+		function myFunctiona4() {
+		  var str = document.getElementById("demo69").innerHTML; 
+		  var txt = str.replace(/MICROSOFT/i,"W3Schools");
+		  document.getElementById("demo69").innerHTML = txt;
+		}
+		</script>
+
+		biểu thức chính quy bằng /icờ
+		<button onclick="myFunctiona5()">Try it</button>
+		<p id="demo70">Please visit Microsoft and Microsoft!</p>
+		<script>
+		function myFunctiona5() {
+		  var str = document.getElementById("demo70").innerHTML; 
+		  var txt = str.replace(/Microsoft/g,"W3Schools");
+		  document.getElementById("demo70").innerHTML = txt;
+		}
+		</script>
+
+		biểu thức chính quy bằng /g
+		<button onclick="myFunctiona6()">Try it</button>
+		<p id="demo71">Please visit Microsoft and Microsoft!</p>
+		<script>
+		function myFunctiona6() {
+		  var str = document.getElementById("demo71").innerHTML; 
+		  var txt = str.replace(/Microsoft/g,"W3Schools");
+		  document.getElementById("demo71").innerHTML = txt;
+		}
+		</script>
+
+		Chuyển đổi sang chữ hoa và chữ thường
+		<button onclick="myFunctiona7()">Try it</button>
+		<p id="demo72">Hello World!</p>
+		<script>
+		function myFunctiona7() {
+		  var text = document.getElementById("demo72").innerHTML;
+		  document.getElementById("demo72").innerHTML = text.toUpperCase();
+		}
+		</script>
+
+		Một chuỗi được chuyển đổi thành chữ thường với toLowerCase():
+		<button onclick="myFunctiona8()">Try it</button>
+		<p id="demo73">Hello World!</p>
+		<script>
+		function myFunctiona8() {
+		  var text = document.getElementById("demo73").innerHTML;
+		  document.getElementById("demo73").innerHTML = text.toLowerCase();
+		}
+		</script>
+
+		Phương thức concat ()
+		<p id="demo74"></p>
+		<script>
+		var text1 = "Hello";
+		var text2 = "World!";
+		var text3 = text1.concat(" ",text2);
+		document.getElementById("demo74").innerHTML = text3;
+		</script>
+
+
+		Chuỗi.trim ()
+		<button onclick="myFunctionxyz()">Try it</button>
+		<script>
+		function myFunctionxyz() {
+		var str = "     Hello World!     ";
+		alert(str.trim());
+		}
+		</script>
+
+		<br><br>
+		bạn có thể sử dụng replace()với một biểu thức thông thường thay thế:
+		<script>
+		var str = "     Hello World!     ";
+		alert(str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, ''));
+		</script>
+
+		<br><br>
+		Có thể sử dụng giải pháp thay thế ở trên để thêm chức năng cắt vào JavaScript String.prototype:
+		<script>
+		if (!String.prototype.trim) {
+		  String.prototype.trim = function () {
+		    return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+		  };
+		}
+		var str = "     Hello World!    ";
+		alert(str.trim());
+		</script>
+
+		<br><br>
+		Các charAt()phương thức trả về các nhân vật tại một chỉ số nào đó (vị trí) trong một chuỗi:
+		<p id="demo75"></p>
+		<script>
+		var str = "HELLO WORLD";
+		document.getElementById("demo75").innerHTML = str.charAt(0);
+		</script>
+
+		<br><br>
+		Các charCodeAt()phương pháp trả về unicode của ký tự tại một chỉ số nhất định trong một chuỗi:
+		Phương thức trả về mã UTF-16 (số nguyên từ 0 đến 65535).
+		<p id="demo76"></p>
+		<script>
+		var str = "HELLO WORLD";
+		document.getElementById("demo76").innerHTML = str.charCodeAt(0);
+		</script>
+
+		<br><br>
+		Truy cập tài sản
+		<p id="demo77"></p>
+		<script>
+		var str = "HELLO WORLD";
+		document.getElementById("demo77").innerHTML = str[0];
+		</script>
+
+		<br><br>
+		ví dụ khác của truy cập tài sản
+		<p id="demo78"></p>
+		<script>
+		var str = "HELLO WORLD";
+		str[0] = "A";  // Does not work
+		document.getElementById("demo78").innerHTML = str[0];
+		</script>
+
+		Một chuỗi có thể được chuyển đổi thành một mảng với split()phương thức:
+		<button onclick="myFunction()">Try it</button>
+		<p id="demo79"></p>
+		<script>
+		function myFunction() {
+		  var str = "a,b,c,d,e,f";
+		  var arr = str.split(",");
+		  document.getElementById("demo79").innerHTML = arr[0];
+		}
+		</script>
+
+		Nếu dấu phân cách là "", mảng được trả về sẽ là một mảng gồm các ký tự đơn:
+		<p id="demo80"></p>
+		<script>
+		var str = "Hello";
+		var arr = str.split("");
+		var text = "";
+		var i;
+		for (i = 0; i < arr.length; i++) {
+		  text += arr[i] + "<br>"
+		}
+		document.getElementById("demo80").innerHTML = text;
+		</script>
+	</div>
+	<div class="container bg-success">
+		<div class="row">
+			<div class="col-md-4">
+				<p class="my-3 text-center">Nhập Số Thứ Nhất:</p>
+			</div>
+			<div class="col-md-8">
+				<form>
+					<input type="text" class="my-3 text-center" placeholder="Nhập Số Thứ Nhất" id="number1" name="number"/>
+				</form>
+			</div>
+		</div>
+		<div class="row">	
+			<div class="col-md-4">	
+				<p class="text-center">Nhập Số Thứ Hai:</p>
+			</div>
+			<div class="col-md-8">
+				<form>
+					<input type="text" class="text-center" placeholder="Nhập Số Thứ Hai" id="number2" name="number"/>
+				</form>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-4">	
+				<p class="my-3 text-center">Kết Quả Là:</p>
+			</div>
+			<div class="col-md-8">
+				<div class="my-3 bg-light" style="border: 1px solid white; height: 25px; width: 168px;">
+					<p class="text-center" id="tanmuller"></p>
+				</div>	
+				<input type="button" value="Tính" onclick="tanchot1998()"/>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 	FirstNumber: <input id="a3" >+
+		LastNumber: <input id="a2">=
+		<p id="demo"></p>
+		<button onclick="show2()" class="ppp">tính</button> -->
+	
+		<!-- Nhập số đầu: <input id="sodau"> 
+		+
+		Nhập số sau: <input id="sosau">
+		=
+		<p id="ketqua"></p>
+		<button onclick="dapan()" class="tong">Kết Quả Là:</button> -->
+</body>
+</html>

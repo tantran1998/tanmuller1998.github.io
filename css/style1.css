@@ -1,0 +1,50 @@
+.sign {
+	letter-spacing: 10px;
+	margin-top: -50px;
+}
+
+.menu:hover {
+	background-color: yellow;
+}
+
+@font-face {
+	font-family: UVNAiCap_B;
+	src: url('../fonts/UVNMangCauNang_R.TTF');
+}
+
+.font2 {
+	font-family: UVNAiCap_B;
+}
+
+.font1 {
+	font-family: UVNAiCap_B;
+}
+
+@font-face {
+	font-family: UVNAiCap_B;
+	src: url('../fonts/UVNBaiHoc_B.TTF');
+}
+
+.font3 {
+	font-family: UVNAiCap_B;
+}
+
+.menu3 {
+	font-size: 19px;
+}
+
+.menu1:hover {
+	background-color: black;
+}
+
+.menu3:hover {
+	color: red;
+}
+
+.menu4:hover {
+	color: red;
+}
+
+.menu5:hover {
+	color: black;
+}
